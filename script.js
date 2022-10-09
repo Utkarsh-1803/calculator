@@ -20,6 +20,10 @@ screen.value = screenValue;
 else if (buttonText=='='){ 
 screen.value = eval(screenValue);
 }
+    else if (buttonText == "+/-") {
+      screen.value = screenValue * -1;
+      screenValue = screen.value;
+    }
 
 else{
     screenValue += buttonText;
