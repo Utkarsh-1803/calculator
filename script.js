@@ -24,6 +24,9 @@ screen.value = eval(screenValue);
       screen.value = screenValue * -1;
       screenValue = screen.value;
     }
+    else if (buttonText == "%") {
+      screen.value = screenValue / 100;
+    } 
 
 else{
     screenValue += buttonText;
